@@ -22,17 +22,17 @@ public class Main {
         System.out.println("All animals in Clinic: " + vetClinic.getAnimals());
 
         System.out.println("\nRunning animals:");
-        for (Runnable r: vetClinic.getRunningAnimals()) {
+        for (Runnable r : vetClinic.getRunningAnimals()) {
             System.out.println(r + "\n" + r.getRunningSpeed());
         }
 
         System.out.println("\nSwimming animals:");
-        for (Swimmable s: vetClinic.getSwimmingAnimals()) {
+        for (Swimmable s : vetClinic.getSwimmingAnimals()) {
             System.out.println(s + "\n" + s.getSwimmingSpeed());
         }
 
         System.out.println("\nFlying animals:");
-        for (Flyable f: vetClinic.getFlyingAnimals()) {
+        for (Flyable f : vetClinic.getFlyingAnimals()) {
             System.out.println(f + "\n" + f.getFlightSpeed());
         }
 

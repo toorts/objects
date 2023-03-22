@@ -19,7 +19,8 @@ public class Crocodile extends Animal implements Swimmable, Runnable {
     }
 
     @Override
-    public void hunt() {}
+    public void hunt() {
+    }
 
     @Override
     public int getRunningSpeed() {

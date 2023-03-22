@@ -18,7 +18,8 @@ public class Falcon extends Animal implements Flyable {
     }
 
     @Override
-    public void hunt() {}
+    public void hunt() {
+    }
 
     @Override
     public int getFlightSpeed() {

@@ -26,7 +26,7 @@ public class VetClinic {
     public List<Runnable> getRunningAnimals() {
         List<Runnable> runningAnimals = new ArrayList<>();
 
-        for (Animal a: this.animals)
+        for (Animal a : this.animals)
             if (a instanceof Runnable) runningAnimals.add((Runnable) a);
 
         return runningAnimals;
@@ -35,7 +35,7 @@ public class VetClinic {
     public List<Swimmable> getSwimmingAnimals() {
         List<Swimmable> swimmingAnimals = new ArrayList<>();
 
-        for (Animal a: this.animals)
+        for (Animal a : this.animals)
             if (a instanceof Swimmable) swimmingAnimals.add((Swimmable) a);
 
         return swimmingAnimals;
@@ -44,7 +44,7 @@ public class VetClinic {
     public List<Flyable> getFlyingAnimals() {
         List<Flyable> flyingAnimals = new ArrayList<>();
 
-        for (Animal a: this.animals)
+        for (Animal a : this.animals)
             if (a instanceof Flyable) flyingAnimals.add((Flyable) a);
 
         return flyingAnimals;

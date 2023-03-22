@@ -19,7 +19,8 @@ public class Dog extends Animal implements Runnable, Swimmable {
     }
 
     @Override
-    public void hunt() {}
+    public void hunt() {
+    }
 
     @Override
     public int getRunningSpeed() {

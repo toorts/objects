@@ -20,7 +20,8 @@ public class Duck extends Animal implements Flyable, Runnable, Swimmable {
     }
 
     @Override
-    public void hunt() {}
+    public void hunt() {
+    }
 
     @Override
     public int getFlightSpeed() {

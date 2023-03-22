@@ -45,7 +45,10 @@ public class Doctor extends Human {
         return age;
     }
 
-    public void heal() {};
+    public void heal() {
+    }
+
+    ;
 
 
     public List<Doctor> getDoctors() {
@@ -55,6 +58,7 @@ public class Doctor extends Human {
         }
         return doctors;
     }
+
     @Override
     public String toString() {
         return String.format("Name : %s, Grade : %s\n", this.getName(), this.post);

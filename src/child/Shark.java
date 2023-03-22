@@ -5,7 +5,7 @@ import parent.Animal;
 
 public class Shark extends Animal implements Swimmable {
     public Shark(String name, String color) {
-        super(name, color,0);
+        super(name, color, 0);
     }
 
     public Shark(String name) {
@@ -18,7 +18,8 @@ public class Shark extends Animal implements Swimmable {
     }
 
     @Override
-    public void hunt() {}
+    public void hunt() {
+    }
 
     @Override
     public int getSwimmingSpeed() {

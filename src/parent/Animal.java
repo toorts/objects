@@ -54,7 +54,7 @@ public abstract class Animal {
         this.pawsCount = pawsCount;
     }
 
-    public static int getAnimalsCount(){
+    public static int getAnimalsCount() {
         return animalsCount;
     }
 

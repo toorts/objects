@@ -23,7 +23,7 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return String.format("Имя: %s, Цвет: %s", this.name, this.color);
+        return String.format("Specie: %s, Name: %s", this.getType(), this.name);
     }
 
     public String getType() {

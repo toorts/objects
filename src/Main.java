@@ -1,4 +1,5 @@
 import child.*;
+import impl.Runnable;
 import parent.*;
 import impl.*;
 import veterinary.VetClinic;
@@ -17,14 +18,9 @@ public class Main {
                 .addAnimal(new Duck("Donald"))
                 .addAnimal(new Falcon("Sam"))
                 .addAnimal(new Crocodile("Gena"))
-                .addAnimal(new Shark("Jose"))
-                .addAnimal(new Doctor("Strange"));
+                .addAnimal(new Shark("Jose"));
 
-        System.out.println("All animals:");
-        for (Animal a: vetClinic.getAllAnimals()) {
-            System.out.println(a);
-            a.speak();
-        }
+        System.out.println("All animals in Clinic: " + vetClinic.getAnimals());
 
         System.out.println("\nRunning animals:");
         for (Runnable r: vetClinic.getRunningAnimals()) {
@@ -41,11 +37,16 @@ public class Main {
             System.out.println(f + "\n" + f.getFlightSpeed());
         }
 
+        System.out.println();
 
-        System.out.println("\nHead physician of this clinic:");
-        System.out.println(vetClinic.getHeadPhysician());
-        vetClinic.getHeadPhysician().speak();
-        vetClinic.getHeadPhysician().work();
+        Doctor house = new Doctor("Gregory House", "MD");
+        Doctor strange = new Doctor("Stephen Strange", "Surgeon");
 
+        List<Doctor> doctors = new ArrayList<>();
+
+        doctors.add(house);
+        doctors.add(strange);
+
+        System.out.println(doctors);
     }
 }

@@ -1,5 +1,6 @@
 package veterinary;
 
+import impl.Runnable;
 import parent.Animal;
 import impl.*;
 
@@ -8,15 +9,19 @@ import java.util.List;
 
 public class VetClinic {
     private final List<Animal> animals;
-    private Human headPhysician;
 
-    public VetClinic(Human headPhysician) {
-        this.headPhysician = headPhysician;
+    public VetClinic() {
         this.animals = new ArrayList<>();
     }
-    public VetClinic() { this(null); }
 
-    public List<Animal> getAllAnimals() { return this.animals; }
+    public List<Animal> getAnimals() {
+        return animals;
+    }
+
+    public VetClinic addAnimal(Animal animal) {
+        this.animals.add(animal);
+        return this;
+    }
 
     public List<Runnable> getRunningAnimals() {
         List<Runnable> runningAnimals = new ArrayList<>();
@@ -45,15 +50,4 @@ public class VetClinic {
         return flyingAnimals;
     }
 
-    public Human getHeadPhysician() {
-        return headPhysician;
-    }
-
-    public VetClinic addAnimal(Animal animal) {
-        if (animal instanceof Human)
-            this.headPhysician = (Human) animal;
-        else
-            this.animals.add(animal);
-        return this;
-    }
 }

@@ -48,7 +48,6 @@ public class Doctor extends Human {
     public void heal() {};
 
 
-    // Метод получения списка врачей клиники
     public List<Doctor> getDoctors() {
         List<Doctor> doctors = new ArrayList<>();
         for (Doctor doctor : doctors) {

@@ -1,8 +1,10 @@
 package child;
 
+import impl.Runnable;
+import impl.Swimmable;
 import parent.Animal;
 
-public class Crocodile extends Animal {
+public class Crocodile extends Animal implements Swimmable, Runnable {
     public Crocodile(String name, String color) {
         super(name, color, 4);
     }

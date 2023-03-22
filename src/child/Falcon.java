@@ -1,8 +1,9 @@
 package child;
 
+import impl.Flyable;
 import parent.Animal;
 
-public class Falcon extends Animal {
+public class Falcon extends Animal implements Flyable {
     public Falcon(String name, String color) {
         super(name, color, 2);
     }

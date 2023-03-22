@@ -1,6 +1,5 @@
 import child.*;
 import impl.Runnable;
-import parent.*;
 import impl.*;
 import veterinary.VetClinic;
 
@@ -47,6 +46,7 @@ public class Main {
         doctors.add(house);
         doctors.add(strange);
 
+        System.out.println("All Doctors:");
         System.out.println(doctors);
     }
 }

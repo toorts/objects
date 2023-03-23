@@ -19,7 +19,7 @@ public class Main {
                 .addAnimal(new Crocodile("Gena"))
                 .addAnimal(new Shark("Jose"));
 
-        System.out.println("All animals in Clinic: " + vetClinic.getAnimals());
+        System.out.println("All animals in Clinic: \n" + vetClinic.getAnimals());
 
         System.out.println("\nRunning animals:");
         for (Runnable r : vetClinic.getRunningAnimals()) {

@@ -6,18 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Doctor extends Human {
-    private String post;
+    private String grade;
     private int age;
 
-    public Doctor(String name, String post, int age) {
+    public Doctor(String name, String grade, int age) {
         super(name);
-        this.post = post;
+        this.grade = grade;
         this.age = age;
     }
 
-    public Doctor(String name, String post) {
+    public Doctor(String name, String grade) {
         super(name);
-        this.post = post;
+        this.grade = grade;
     }
 
     public Doctor(String name) {
@@ -28,8 +28,8 @@ public class Doctor extends Human {
         this.age = age;
     }
 
-    public void setPost(String post) {
-        this.post = post;
+    public void setPost(String grade) {
+        this.grade = grade;
     }
 
     @Override
@@ -37,8 +37,8 @@ public class Doctor extends Human {
         return super.getName();
     }
 
-    public String getPost() {
-        return post;
+    public String getGrade() {
+        return grade;
     }
 
     public int getAge() {
@@ -47,9 +47,6 @@ public class Doctor extends Human {
 
     public void heal() {
     }
-
-    ;
-
 
     public List<Doctor> getDoctors() {
         List<Doctor> doctors = new ArrayList<>();
@@ -61,6 +58,6 @@ public class Doctor extends Human {
 
     @Override
     public String toString() {
-        return String.format("Name : %s, Grade : %s\n", this.getName(), this.post);
+        return String.format("Name : %s, Grade : %s\n", this.getName(), this.grade);
     }
 }

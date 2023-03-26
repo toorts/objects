@@ -54,11 +54,4 @@ public class Component {
         return (power == component.power) && weight.equals(component.weight) && name.equals(component.name);
     }
 
-//    @Override
-//    public int hashCode() {
-//        int result = power;
-//        result = 31 * result + (name != null ? name.hashCode() : 0);
-//        result = 31 * result + (weight != null ? weight.hashCode(): 0);
-//        return result;
-//    }
 }

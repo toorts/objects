@@ -21,8 +21,6 @@ public class Main {
         List<Component> componentCat5 = List.of(new Azitron("Азитрон","4",4),
                 new Penicillin("Пинецилин", "20", 6));
 
-        // Создаем лекарства на основе других компонентов
-
         CatDrug neocat = new CatDrug(componentCat, "neocat");
         CatDrug penitron = new CatDrug(componentCat2, "penitron");
         CatDrug azipen = new CatDrug(componentCat2, "azipen");
@@ -30,7 +28,6 @@ public class Main {
         CatDrug watertron = new CatDrug(componentCat4, "watertron");
         CatDrug hellokit = new CatDrug(componentCat5, "hellokit ");
 
-        // Создаем список лекарств
         List<CatDrug> drugs = new ArrayList<>();
         drugs.add(neocat);
         drugs.add(penitron);

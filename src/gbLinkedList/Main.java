@@ -5,9 +5,9 @@ public class Main {
         GBLinkedList<String> list = new GBLinkedList<>();
 
         // Добавление элементов в начало и конец списка
-        list.addToFront("world");
-        list.addToFront("hello");
-        list.addToEnd("!");
+        list.addToFront("one");
+        list.addToFront("zero");
+        list.addToEnd("two");
 
         // Получение размера списка
         System.out.println("Size of the list: " + list.size());

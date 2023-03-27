@@ -6,7 +6,7 @@ public class Main {
 
         // Добавление элементов в начало и конец списка
         list.addToFront("one");
-        list.addToFront("zero");
+        list.addToFront("zeroo");
         list.addToEnd("two");
 
         // Получение размера списка
